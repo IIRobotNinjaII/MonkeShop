@@ -52,7 +52,9 @@ async function lol(product){
             }
         }
         return products[1];
+        browser.close();
     }catch (error) {
+        browser.close();
         console.log(error)
     }
 }
